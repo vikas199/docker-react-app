@@ -3,7 +3,7 @@ services:
     - docker
 
 before_install:
-    - docker build -t vikasraj1471/docker-react-app -f Deockerfile.dev .
+    - docker build -t vikasraj1471/docker-react-app -f Dockerfile.dev .
 
 script:
      - docker run -e CI=true vikasraj1471/frontend_react-web-app npm run test
